@@ -458,7 +458,7 @@
       var $this = $(this).html(
         event.strftime(
           '' +
-            '<div class="box"><div><div class="time">%m</div> <span>Month</span> </div></div>' +
+            // '<div class="box"><div><div class="time">%m</div> <span>Month</span> </div></div>' +
             '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
             '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
             '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
