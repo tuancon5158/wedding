@@ -11418,7 +11418,7 @@ video {
 	 pointer-events: none;
 }
  .modalbg .dialog {
-	 width: 500px;
+	 width: 400px;
 	 position: relative;
 	 top: -1000px;
 	 margin: 10% auto;
@@ -11447,7 +11447,7 @@ video {
 	 transition: all .5s ease-out;
 }
  .modalbg .dialog {
-	 top: -20px;
+	 top: 100px;
 	 -moz-transition: all .8s ease-out;
 	 -webkit-transition: all .8s ease-out;
 	 -o-transition: all .8s ease-out;
