@@ -269,10 +269,28 @@ img {
   margin-bottom: 60px;
   text-align: center;
 }
+.wpo-video-item{
+  height: 900px;
+}
+.ytp-pause-overlay{
+    display: none !important;
+    opacity: 0;
+}
+.ytp-pause-overlay-container{
+  display: none !important;
+
+}
+.ytp-chrome-top{
+  display: none !important;
+
+}
 @media (max-width: 767px) {
   .wpo-section-title,
   .wpo-section-title-s2 {
     margin-bottom: 40px;
+  }
+  .wpo-video-item{
+    height: 400px;
   }
 }
 .wpo-section-title span,
@@ -11338,3 +11356,148 @@ background-size: 100%;
 video {
   object-fit: contain;
 }
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+ body {
+	 width: 100%;
+	 background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grid.png) repeat #fefefe;
+}
+ .button {
+	 margin: 40px auto;
+	 font-size: 72px;
+	 font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	 text-decoration: none;
+	 text-shadow: 1px 1px 0px #fff;
+	 font-weight: 400;
+	 color: #666;
+	 border: 1px solid #ccc;
+	 cursor: pointer;
+	 padding: 20px 70px 30px;
+	 position: relative;
+	 top: 50px;
+	 background: #eee;
+	 width: 300px;
+	 display: block;
+	 text-align: center;
+	 box-shadow: 1px 1px 1px #fff;
+	 -moz-box-shadow: 1px 1px 1px #fff;
+	 -webkit-box-shadow: 1px 1px 1px #fff;
+	 -moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 border-radius: 5px;
+	 -moz-transition: all .5s ease-out;
+	 -webkit-transition: all .5s ease-out;
+	 -o-transition: all .5s ease-out;
+	 transition: all .5s ease-out;
+}
+ .button:hover {
+	 color: #333;
+	 background: #eeffff;
+	 -moz-transition: all .5s ease-out;
+	 -webkit-transition: all .5s ease-out;
+	 -o-transition: all .5s ease-out;
+	 transition: all .5s ease-out;
+}
+ .modalbg {
+	 position: fixed;
+	 font-family: Arial, Helvetica, sans-serif;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 background: rgba(0,0,0,0);
+	 z-index: 99999999999;
+	 -moz-transition: all 2s ease-out;
+	 -webkit-transition: all 2s ease-out;
+	 -o-transition: all 2s ease-out;
+	 transition: all 2s ease-out;
+	 -webkit-transition-delay: .2s;
+	 -moz-transition-delay: .2s;
+	 -o-transition-delay: .2s;
+	 -transition-delay: .2s;
+	 display: block;
+	 pointer-events: none;
+}
+ .modalbg .dialog {
+	 width: 500px;
+	 position: relative;
+	 top: -1000px;
+	 margin: 10% auto;
+	 padding: 5px 20px 13px 20px;
+	 -moz-border-radius: 10px;
+	 -webkit-border-radius: 10px;
+	 border-radius: 10px;
+	 background: #fff;
+	 background: -moz-linear-gradient(#fff,#ccc);
+	 background: -webkit-linear-gradient(#fff,#ccc);
+	 background: -o-linear-gradient(#fff,#ccc);
+	 box-shadow: 0 0 10px #000;
+	 -moz-box-shadow: 0 0 10px #000;
+	 -webkit-box-shadow: 0 0 10px #000;
+}
+ .modalbg .dialog .ie7 {
+	 filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+ .modalbg {
+	 display: none;
+	 pointer-events: auto;
+	 background: rgba(4,10,30,0.8);
+	 -moz-transition: all .5s ease-out;
+	 -webkit-transition: all .5s ease-out;
+	 -o-transition: all .5s ease-out;
+	 transition: all .5s ease-out;
+}
+ .modalbg .dialog {
+	 top: -20px;
+	 -moz-transition: all .8s ease-out;
+	 -webkit-transition: all .8s ease-out;
+	 -o-transition: all .8s ease-out;
+	 transition: all .8s ease-out;
+	 -webkit-transition-delay: .4s;
+	 -moz-transition-delay: .4s;
+	 -o-transition-delay: .4s;
+	 -transition-delay: .4s;
+}
+ .close {
+	 background: #606061;
+	 color: #FFFFFF;
+	 line-height: 25px;
+   cursor: pointer;
+	 position: absolute;
+	 right: -12px;
+	 text-align: center;
+	 top: -10px;
+	 width: 24px;
+	 text-decoration: none;
+	 font-weight: bold;
+	 -webkit-border-radius: 12px;
+	 -moz-border-radius: 12px;
+	 border-radius: 12px;
+	 box-shadow: 0 0 10px #000;
+	 -moz-box-shadow: 0 0 10px #000;
+	 -webkit-box-shadow: 0 0 10px #000;
+	 -moz-transition: all .5s ease-out;
+	 -webkit-transition: all .5s ease-out;
+	 -o-transition: all .5s ease-out;
+	 transition: all .5s ease-out;
+	 -webkit-transition-delay: .2s;
+	 -moz-transition-delay: .2s;
+	 -o-transition-delay: .2s;
+	 -transition-delay: .2s;
+}
+ .close .ie7 {
+	 filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+ .close:hover {
+	 background: #00d9ff;
+	 -moz-transition: all .5s ease-out;
+	 -webkit-transition: all .5s ease-out;
+	 -o-transition: all .5s ease-out;
+	 transition: all .5s ease-out;
+}
+ .fineprint {
+	 font-style: italic;
+	 font-size: 10px;
+	 color: #646;
+}
+ 
+ 

@@ -243,6 +243,7 @@
             </section>
             <!-- end couple-section -->
             <!-- start wpo-video-section -->
+
             <section class="wpo-video-section-s2">
                 <div class="row">
                     <div class="wpo-section-title-s2">
@@ -256,21 +257,15 @@
                     </div>
                 </div>
 
-                <div class="wpo-video-item">
-                    <video
-                        width="100%"
-                        height="auto"
-                        preload="metadata"
-                        style="aspect-ratio: 16/9"
-                        controls
-                        autoplay
-                        poster="assets/images/20.jpg"
+                <div class="wpo-video-item plyr__video-embed" id="player">
+                    <iframe
+                        width="80%"
+                        src="https://www.youtube.com/embed/Qk17NuSg-As"
+                        allowfullscreen
+                        allowtransparency
+                        allow="autoplay"
                     >
-                        <source
-                            src="./assets/videos/video.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
+                    </iframe>
                 </div>
             </section>
             <!-- end wpo-video-section-->
@@ -607,6 +602,7 @@
                                         type="text"
                                         class="form-control"
                                         name="data[Name]"
+                                        id="data[Name]"
                                         placeholder="Người gửi (*)"
                                     />
                                 </div>
@@ -616,7 +612,7 @@
                                         type="text"
                                         class="form-control"
                                         name="data[Wish]"
-                                        id="c-wish"
+                                        id="data[Wish]"
                                         placeholder="Lời chúc (*)"
                                     />
                                 </div>
@@ -633,12 +629,26 @@
                                     </select>
                                 </div>
                                 <div class="submit-area">
-                                    <a class="button" href="#popup1">Let me Pop up</a>
-                                    <button type="submit" class="theme-btn-s3">Gửi</button>
+                                    <button onclick="test()" type="submit" class="theme-btn-s3">
+                                        Gửi
+                                    </button>
                                     <div id="c-loader">
                                         <i class="ti-reload"></i>
                                     </div>
                                 </div>
+                                <script>
+                                    function test() {
+                                        let wish = document.getElementById("data[Wish]").value;
+                                        let name = document.getElementById("data[Name]").value;
+                                        if (wish && name) {
+                                            const myElement = document.getElementById("modalbg");
+                                            myElement.style.display = "block";
+                                            setTimeout(() => {
+                                                myElement.style.display = "none";
+                                            }, 3000);
+                                        }
+                                    }
+                                </script>
                                 <div class="clearfix error-handling-messages">
                                     <div id="c-success">Xin cảm ơn !</div>
                                     <div id="c-error">
@@ -646,7 +656,25 @@
                                     </div>
                                 </div>
                             </form>
-
+                            <div class="modalbg" id="modalbg">
+                                <div class="dialog">
+                                    <span title="Close" onclick="closeX()" class="close">X</span>
+                                    <h4>Cảm ơn bạn đã gửi lời chúc !!!</h4>
+                                    <p>Hẹn gặp lại bạn trong tiệc cưới</p>
+                                    <div>
+                                        <img
+                                            src="assets/images/pngtree-wedding-wedding-dress-couple-romantic-png-image_534882.jpg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function closeX() {
+                                    console.log("2323");
+                                    const myElement = document.getElementById("modalbg");
+                                    myElement.style.display = "none";
+                                }
+                            </script>
                             <script>
                                 var form = document.getElementById("sheetdb-form");
                                 form.addEventListener("submit", (e) => {
@@ -1027,14 +1055,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <img src="assets/images/best.jpg" alt="" />
-                                            <div class="hover-content">
-                                                <span>Đà Lạt - Sep 2022</span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="grid">
                                         <div class="img-holder">
                                             <img src="assets/images/02.jpg" alt="" />
